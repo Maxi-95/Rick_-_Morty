@@ -1,0 +1,17 @@
+.navegador{
+    display: flex;
+    justify-content: end;
+    background-color: aqua;
+    padding: 2rem;
+}
+.buscador{
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 0.5rem;
+}
+.boton_buscador{
+    background-color: lightgreen;
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 0.5rem;
+}
