@@ -1,0 +1,50 @@
+.fondo{
+    background-image: url('/src/img/backgraund\ rick&morty\ 2.png');
+    height: 970px;
+    display: flex;
+}
+
+.imagen{
+    display: flex;
+    justify-items: center;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.volver{
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    
+}
+
+.boton{
+    padding: 35px;
+    background-color: yellow;
+    color: black;
+    border-radius: 1rem;
+    
+}
+
+.descripcion{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 50%;
+    color: rgb(132, 0, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    
+}
+.lista{
+    padding: 70px;
+    padding-top: 100px;
+}
+.home{
+    background-image: url('/src/img/backgraund\ rick&morty\ 2.png');
+    height: 100%;
+    width: 50%;
+    
+}

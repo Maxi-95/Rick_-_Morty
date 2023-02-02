@@ -1,18 +1,13 @@
 import './App.css'
 import Cards from './components/Card/Cards.jsx'
 import Nav from './components/Nav.jsx'
+import About from './components/About/About'
+import Detail from './components/Detail/Detail'
 import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 function App () {
-  const [characters, setCharacters] = useState([
-    // {
-    // name: 'Morty Smith',
-    // species: 'Human',
-    // gender: 'Male',
-    // image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
-    // }
-])
+  const [characters, setCharacters] = useState([])
 
 const onClose = (id) => {
   setCharacters(
@@ -34,11 +29,18 @@ const onClose = (id) => {
   }
 
   return (
-    <div className='App' style={{ padding: '25px' }}>
+    <div>
       <Nav onSearch={onSearch}/>
-      <Cards characters={characters} onClose={onClose}/>
+      <Routes>
+            <Route path='home' element={<Cards characters={characters} onClose={onClose}/>}/>
+            <Route path='about' element={<About/>}/>        
+            <Route path='detail/:detailId' element={<Detail/>}/>          
+      </Routes>      
     </div>
   )
 }
 
 export default App
+
+
+
